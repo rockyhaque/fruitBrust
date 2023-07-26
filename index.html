@@ -53,7 +53,7 @@
     <header>
 
       <!-- Nav Section -->
-      <nav class="max-w-screen-xl mx-auto my-6 text-white bg-pink-color-primary rounded-3xl">
+      <nav class="max-w-screen-xl mx-auto my-6 text-black md:text-white lg:text-white bg-transparent md:bg-pink-color-primary lg:bg-pink-color-primary rounded-3xl">
             <div class="navbar flex justify-between">
                 
                 <div>
@@ -89,9 +89,11 @@
                 </div>
 
 
-                <div>
-                    <input type="text" placeholder="Type here" class="input input-bordered rounded-3xl w-full max-w-xs"/>
-                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <div class="invisible md:visible lg:visible">
+                    <input type="text" placeholder="Search here" class="input input-bordered rounded-3xl w-full max-w-xs"/>
+                </div>
+                <div class="visible md:invisible lg:invisible">
+                  <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
       </nav>
@@ -218,34 +220,34 @@
 
     <main class="max-w-screen-xl mx-auto font-lato">
       <!-- Deal contianer Section  -->
-      <section>
+      <section class="mt-1 md:mt-5 lg:mt-5">
           <div class="flex flex-col md:flex-row lg:flex-row">
 
             <!-- Deal info -->
             <div class="w-auto md:w-auto lg:w-3/6 space-y-4">
-              <h1 class="text-5xl">Deal of the day!</h1>
+              <h1 class="text-5xl font-bold">Deal of the day!</h1>
               <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
 
             <!-- Deal deadline -->
             <div class="flex w-auto md:w-auto lg:w-3/6 justify-end items-center gap-5 ">
               <div class="text-center space-y-4">
-                <h1 class="text-5xl">29</h1>
+                <h1 class="text-5xl font-bold">29</h1>
                 <p>Days</p>
               </div>
               <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
               <div class="text-center space-y-4">
-                <h1 class="text-5xl">15</h1>
+                <h1 class="text-5xl font-bold">15</h1>
                 <p>Hours</p>
               </div>
               <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
               <div class="text-center space-y-4">
-                <h1 class="text-5xl">25</h1>
+                <h1 class="text-5xl font-bold">25</h1>
                 <p>Minutes</p>
               </div>
               <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
               <div class="text-center space-y-4">
-                <h1 class="text-5xl">08</h1>
+                <h1 class="text-5xl font-bold">08</h1>
                 <p>Seconds</p>
               </div>
             </div>
@@ -256,17 +258,17 @@
             <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-32">
 
               <!-- First Review  -->
-              <div class="card  bg-base-100 p-9 border border-gray-400 drop-shadow-2xl">
+              <div class="card  bg-base-100 p-9 drop-shadow-2xl">
                 <figure><img class="w-36 h-36" src="./images/fruit6.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <p class="text-center">12.90$ - 18.85$</p>
+                  <p class="text-center text-xl font-bold">12.90$ - 18.85$</p>
                   <p class="text-center">Apple</p>
                     <div class="rating justify-center">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
                     </div>
                   <div class="text-center space-y-4 mt-4">
                     
@@ -276,62 +278,62 @@
               </div>
     
               <!-- Second Review  -->
-              <div class="card  bg-base-100 p-9 border border-gray-400 drop-shadow-2xl">
+              <div class="card  bg-base-100 p-9 drop-shadow-2xl">
                 <figure><img class="w-36" src="./images/fruit7.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <p class="text-center">12.90$ - 18.85$</p>
+                  <p class="text-center text-xl font-bold">12.90$ - 18.85$</p>
                   <p class="text-center">Orange</p>
                     <div class="rating justify-center">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
                     </div>
                   <div class="text-center space-y-4 mt-4">
                     
-                  <p class="text-red-primary">Details</p>
+                  <p class="text-pink-color-primary">Details</p>
                   </div>
                 </div>
               </div>
     
               <!-- Third Review  -->
-              <div class="card  bg-base-100 p-9 border border-gray-400 drop-shadow-2xl">
+              <div class="card  bg-base-100 p-9 drop-shadow-2xl">
                 <figure><img class="w-36" src="./images/fruit8.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <p class="text-center">12.90$ - 18.85$</p>
+                  <p class="text-center text-xl font-bold">12.90$ - 18.85$</p>
                   <p class="text-center">Red Dragon</p>
                     <div class="rating justify-center">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
                     </div>
                   <div class="text-center space-y-4 mt-4">
                     
-                  <p class="text-red-primary">Details</p>
+                  <p class="text-pink-color-primary">Details</p>
                   </div>
                 </div>
               </div>
 
 
               <!-- Forth Review  -->
-              <div class="card  bg-base-100 p-9 border border-gray-400 drop-shadow-2xl">
+              <div class="card  bg-base-100 p-9 drop-shadow-2xl">
                 <figure><img class="w-36" src="./images/fruit9.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <p class="text-center">12.90$ - 18.85$</p>
+                  <p class="text-center text-xl font-bold">12.90$ - 18.85$</p>
                   <p class="text-center">Banana</p>
                     <div class="rating justify-center">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked/>
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
                     </div>
                   <div class="text-center space-y-4 mt-4">
                     
-                  <p class="text-red-primary">Details</p>
+                  <p class="text-pink-color-primary">Details</p>
                   </div>
                 </div>
               </div>
@@ -426,46 +428,46 @@
 
       <!-- Choose Us Section -->
       <section class="my-20">
-         <!-- Choose Us Info  -->
-         <div class="text-center">
-            <h1 class="mb-5 mt-20 text-5xl font-bold">Why Choose Us</h1>
-            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
-            </p>
+        <!-- Choose Us Info  -->
+        <div class="text-center">
+          <h1 class="mb-5 mt-20 text-5xl font-bold">Why Choose Us</h1>
+          <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+          </p>
         </div>
 
         <!-- Left-img-Right  -->
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 my-14">
           <!-- left container-->
           <div class="space-y-10">
             <!-- left div 1 -->
             <div class="flex items-center gap-5">
-              <div>
+              <div class="text-2xl">
                 <i class="fa-solid fa-people-group"></i>
               </div>
               <div class="">
-                <h1>Dedicated Team</h1>
+                <h1 class="text-2xl font-bold">Dedicated Team</h1>
                 <p class="border-b border-gray-500 w-16"></p>
                 <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
             </div>
             <!-- left div 2 -->
             <div class="flex  items-center gap-5">
-              <div>
+              <div class="text-2xl">
                 <i class="fa-solid fa-heart-circle-check"></i>
               </div>
               <div class="">
-                <h1>Fresh is Best</h1>
+                <h1 class="text-2xl font-bold">Fresh is Best</h1>
                 <p class="border-b border-gray-500 w-16"></p>
                 <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
             </div>
             <!-- left div 3 -->
             <div class="flex  items-center gap-5">
-              <div>
+              <div class="text-2xl">
                 <i class="fa-solid fa-gifts"></i>
               </div>
               <div class="">
-                <h1>Gift Certificates</h1>
+                <h1 class="text-2xl font-bold">Gift Certificates</h1>
                 <p class="border-b border-gray-500 w-16"></p>
                 <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
@@ -484,11 +486,11 @@
             <div class="flex items-center gap-5 justify-end">
               
               <div class="text-end">
-                <h1>Integrated Supplier</h1>
+                <h1 class="text-2xl font-bold">Integrated Supplier</h1>
                 <div class="flex justify-end"><p class="border-b border-gray-500 w-16"></p></div>
                 <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
-              <div>
+              <div class="text-3xl">
                 <i class="fa-brands fa-pagelines"></i>
               </div>
             </div>
@@ -496,11 +498,11 @@
             <div class="flex  items-center gap-5 justify-end">
               
               <div class="text-end">
-                <h1>Sustainable Practice</h1>
+                <h1 class="text-2xl font-bold">Sustainable Practice</h1>
                 <div class="flex justify-end"><p class="border-b border-gray-500 w-16"></p></div>
                 <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
-              <div>
+              <div class="text-3xl">
                 <i class="fa-solid fa-ice-cream"></i>
               </div>
             </div>
@@ -508,11 +510,11 @@
             <div class="flex  items-center gap-5 justify-end">
               
               <div class="text-end">
-                <h1>The Benefits Only</h1>
+                <h1 class="text-2xl font-bold">The Benefits Only</h1>
                 <div class="flex justify-end"><p class="border-b border-gray-500 w-16"></p></div>
                 <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
-              <div>
+              <div class="text-3xl">
                 <i class="fa-regular fa-thumbs-up"></i>
               </div>
 
