@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- Font-awesome icon  -->
+    <script src="https://kit.fontawesome.com/680c8cb7df.js" crossorigin="anonymous"></script>
+
     <!-- Custom Script  -->
     <script>
         tailwind.config = {
@@ -21,7 +27,15 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'pink-color-primary': '#F85559',
+              },
+              backgroundImage: {
+                'slider-1': "url('./images/banner1.png')",
+                'slider-2': "url('./images/banner2.png')",
+                'slider-3': "url('./images/banner3.png')",
+                'slider-4': "url('./images/banner4.png')",
               }
+              
             }
           }
         }
@@ -29,18 +43,232 @@
 
     <!-- Styles  -->
     <style>
-
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
     </style>
 </head>
-<body>
+<body class="font-lato">
     <header>
 
-    </header>
-    <main>
+      <!-- Nav Section -->
+      <nav class="max-w-screen-xl mx-auto my-6 text-white bg-pink-color-primary rounded-3xl">
+            <div class="navbar flex justify-between">
+                
+                <div>
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                       
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52 text-start">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                     
+                    
+                   
+                    <div class="navbar-center hidden flex-1 lg:flex">
+                      <ul class="menu menu-horizontal text-base px-1 text-start">
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                      </ul>
+                    </div>
+                </div>
 
+
+                <div class="gap-3">
+                    <img src="./images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Fruit Burst</a>
+                </div>
+
+
+                <div>
+                    <input type="text" placeholder="Type here" class="input input-bordered rounded-3xl w-full max-w-xs"/>
+                    <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                </div>
+            </div>
+      </nav>
+
+      <!-- Hero section -->
+        <section class="max-w-screen-xl mx-auto text-white">
+           
+          <!-- Slider or Carousel  -->
+          <div class="carousel w-full lg:h-[550px]">
+            <!-- Slider 1  -->
+            <div id="slide1" class="carousel-item relative w-full bg-slider-1 bg-no-repeat">
+              <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24 justify-center items-center mx-auto">
+                <div class="space-y-7 text-white text-center">
+                  <h1 class="text-6xl font-bold">
+                    Exotic tastes at your <br> doorstep
+                  </h1>
+                  <p>
+                    We supply highly quality organic products
+                  </p>
+                  
+                  <button class="btn bg-pink-color-primary border-none text-white ">Shop Now</button>
+                </div>
+                
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+  
+            <!-- Slider 2  -->
+            <div id="slide2" class="carousel-item relative w-full mx-auto bg-cover bg-slider-2 bg-no-repeat">
+              <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24 justify-center items-center mx-auto">
+                <div class="space-y-7 text-white text-center">
+                  <h1 class="text-6xl font-bold">
+                    Exotic tastes at your <br> doorstep
+                  </h1>
+                  <p>
+                    We supply highly quality organic products
+                  </p>
+                  
+                  <button class="btn bg-pink-color-primary border-none text-white ">Shop Now</button>
+                </div>
+                
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+  
+            <!-- Slider 3  -->
+            <div id="slide3" class="carousel-item relative w-full bg-slider-3 bg-no-repeat">
+              <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24 justify-center items-center mx-auto">
+                <div class="space-y-7 text-white text-center">
+                  <h1 class="text-6xl font-bold">
+                    Exotic tastes at your <br> doorstep
+                  </h1>
+                  <p>
+                    We supply highly quality organic products
+                  </p>
+                  
+                  <button class="btn bg-pink-color-primary border-none text-white ">Shop Now</button>
+                </div>
+                
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+
+          
+
+            <!-- Slider 4  -->
+            <div id="slide4" class="carousel-item relative w-full bg-slider-4 bg-no-repeat">
+              <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24 justify-center items-center mx-auto">
+                <div class="space-y-7 text-white text-center">
+                  <h1 class="text-6xl font-bold">
+                    Exotic tastes at your <br> doorstep
+                  </h1>
+                  <p>
+                    We supply highly quality organic products
+                  </p>
+                  
+                  <button class="btn bg-pink-color-primary border-none text-white ">Shop Now</button>
+                </div>
+                
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+  
+          </div>
+
+           <!-- popup container  -->
+           <div class="flex justify-center gap-3 text-center text-black bg-white rounded-xl py-5 w-2/3 mx-auto relative -top-20 invisible md:visible lg:visible">
+            <div>
+                <img src="./images/fruit1.png" alt="">
+                <p>Graps</p>
+            </div>
+            <div>
+                <img src="./images/fruit2.png" alt="">
+                <p>Orange</p>
+            </div>
+            <div>
+                <img src="./images/fruit3.png" alt="">
+                <p>Mango</p>
+            </div>
+            <div>
+                <img src="./images/fruit4.png" alt="">
+                <p>Strawberry</p>
+            </div>
+            <div>
+                <img src="./images/fruit5.png" alt="">
+                <p>Pomegranate</p>
+            </div>
+          </div>
+      </section>
+
+        <!-- Hero popup Section -->
+        <!-- <section>
+          <button class="btn" onclick="my_modal_3.showModal()">open modal</button>
+          <dialog id="my_modal_3" class="modal">
+            <form method="dialog" class="modal-box">
+              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+              <h3 class="font-bold text-lg">Hello!</h3>
+              <p class="py-4">Press ESC key or click on ✕ button to close</p>
+            </form>
+          </dialog>
+        </section> -->
+
+    </header>
+    <main class="max-w-screen-xl mx-auto">
+      <!-- Deal contianer Section  -->
+      <section class="">
+          <div class="flex flex-col md:flex-row lg:flex-row">
+
+            <!-- Deal info -->
+            <div class="w-auto md:w-auto lg:w-3/6 space-y-4">
+              <h1 class="text-5xl">Deal of the day!</h1>
+              <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+            <!-- Deal deadline -->
+            <div class="flex w-auto md:w-auto lg:w-3/6 justify-end items-center gap-5 ">
+              <div class="text-center space-y-4">
+                <h1 class="text-5xl">29</h1>
+                <p>Days</p>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+              <div class="text-center space-y-4">
+                <h1 class="text-5xl">15</h1>
+                <p>Hours</p>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+              <div class="text-center space-y-4">
+                <h1 class="text-5xl">25</h1>
+                <p>Minutes</p>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+              <div class="text-center space-y-4">
+                <h1 class="text-5xl">08</h1>
+                <p>Seconds</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Container  -->
+          <div>
+            
+          </div>
+      </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
