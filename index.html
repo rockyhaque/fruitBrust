@@ -56,49 +56,50 @@
 
       <!-- Nav Section -->
       <nav class="max-w-screen-xl mx-auto my-6 text-black md:text-white lg:text-white bg-transparent md:bg-pink-color-primary lg:bg-pink-color-primary rounded-3xl">
-            <div class="navbar flex justify-between">
-                
-                <div>
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </label>
-                       
-                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52 text-start">
-                          <li><a>Home</a></li>
-                          <li><a>About Us</a></li>
-                          <li><a>Shop</a></li>
-                          <li><a>All Fruits</a></li>
-                        </ul>
-                    </div>
-                     
-                    
+        <div class="navbar flex justify-between">
+            
+            <div class="">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
                    
-                    <div class="navbar-center hidden flex-1 lg:flex">
-                      <ul class="menu menu-horizontal text-base px-1 text-start">
-                          <li><a>Home</a></li>
-                          <li><a>About Us</a></li>
-                          <li><a>Shop</a></li>
-                          <li><a>All Fruits</a></li>
-                      </ul>
-                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52 text-start">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
                 </div>
-
-
-                <div class="gap-3">
-                    <img src="./images/logo.png" alt="">
-                    <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Fruit Burst</a>
-                </div>
-
-
-                <div class="invisible md:visible lg:visible">
-                    <input type="text" placeholder="Search here" class="input input-bordered rounded-3xl w-full max-w-xs"/>
-                </div>
-                <div class="visible md:invisible lg:invisible">
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                 
+                
+               
+                <div class="navbar-center hidden flex-1 lg:flex">
+                  <ul class="menu menu-horizontal text-base px-1 text-start">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                  </ul>
                 </div>
             </div>
-      </nav>
+
+
+            <div class="mr-24">
+                <img src="./images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Fruit Burst</a>
+            </div>
+
+
+            <div class="invisible md:visible lg:visible">
+                <input type="text" placeholder="Search here" class="input input-bordered rounded-3xl w-full max-w-xs"/>
+                <i class="visible md:invisible lg:invisible fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+              
+            
+        </div>
+  </nav>
 
       <!-- Hero section -->
         <section class="max-w-screen-xl mx-auto text-white">
@@ -260,24 +261,50 @@
             <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-32">
 
               <!-- First Review  -->
-              <div class="card  bg-base-100 p-9 drop-shadow-2xl">
-                <figure><img class="w-36 h-36" src="./images/fruit6.png" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <p class="text-center text-xl font-bold">12.90$ - 18.85$</p>
-                  <p class="text-center">Apple</p>
-                    <div class="rating justify-center">
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked/>
-                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <!-- You can open the modal using ID.showModal() method -->
+              <button class="" onclick="my_modal_3.showModal()">
+                <div class="card  bg-base-100 p-9 drop-shadow-2xl">
+                  <figure><img class="w-36 h-36" src="./images/fruit6.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <p class="text-center text-xl font-bold">12.90$ - 18.85$</p>
+                    <p class="text-center">Apple</p>
+                      <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                      </div>
+                    <div class="text-center space-y-4 mt-4">
+                      
+                    <p class="text-pink-color-primary">Details</p>
                     </div>
-                  <div class="text-center space-y-4 mt-4">
-                    
-                  <p class="text-pink-color-primary">Details</p>
                   </div>
                 </div>
-              </div>
+              </button>
+              <dialog id="my_modal_3" class="modal">
+                <form method="dialog" class="modal-box">
+                  <button class="btn btn-sm btn-circle btn-ghost absolute right-0 top-0">✕</button>
+                  <div class="card  bg-base-100 p-9 drop-shadow-2xl">
+                    <figure><img class="w-36 h-36" src="./images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <p class="text-center text-xl font-bold">12.90$ - 18.85$</p>
+                      <p class="text-center">Apple</p>
+                        <div class="rating justify-center">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked/>
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                        </div>
+                      <div class="text-center space-y-4 mt-4">
+                        
+                      <p class="text-pink-color-primary">Details</p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </dialog>
     
               <!-- Second Review  -->
               <div class="card  bg-base-100 p-9 drop-shadow-2xl">
