@@ -28,7 +28,7 @@
               colors: {
                 clifford: '#da373d',
                 'pink-color-primary': '#F85559',
-                'red-primary': '#F85559',
+                'black-primary': '#121212',
               },
               backgroundImage: {
                 'slider-1': "url('./images/banner1.png')",
@@ -215,7 +215,8 @@
       </section>
 
     </header>
-    <main class="max-w-screen-xl mx-auto">
+
+    <main class="max-w-screen-xl mx-auto font-lato">
       <!-- Deal contianer Section  -->
       <section>
           <div class="flex flex-col md:flex-row lg:flex-row">
@@ -269,7 +270,7 @@
                     </div>
                   <div class="text-center space-y-4 mt-4">
                     
-                  <p class="text-red-primary">Details</p>
+                  <p class="text-pink-color-primary">Details</p>
                   </div>
                 </div>
               </div>
@@ -424,17 +425,129 @@
       </section>
 
       <!-- Choose Us Section -->
-      <section>
+      <section class="my-20">
          <!-- Choose Us Info  -->
          <div class="text-center">
-          <h1 class="mb-5 mt-20 text-5xl font-bold">Why Choose Us</h1>
-          <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-          </p>
+            <h1 class="mb-5 mt-20 text-5xl font-bold">Why Choose Us</h1>
+            <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+        </div>
+
+        <!-- Left-img-Right  -->
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+          <!-- left container-->
+          <div class="space-y-10">
+            <!-- left div 1 -->
+            <div class="flex items-center gap-5">
+              <div>
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="">
+                <h1>Dedicated Team</h1>
+                <p class="border-b border-gray-500 w-16"></p>
+                <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+            <!-- left div 2 -->
+            <div class="flex  items-center gap-5">
+              <div>
+                <i class="fa-solid fa-heart-circle-check"></i>
+              </div>
+              <div class="">
+                <h1>Fresh is Best</h1>
+                <p class="border-b border-gray-500 w-16"></p>
+                <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+            <!-- left div 3 -->
+            <div class="flex  items-center gap-5">
+              <div>
+                <i class="fa-solid fa-gifts"></i>
+              </div>
+              <div class="">
+                <h1>Gift Certificates</h1>
+                <p class="border-b border-gray-500 w-16"></p>
+                <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- img  -->
+          <div>
+            <img src="./images/whychoose1.png" alt="">
+          </div>
+
+          
+          <!-- right container-->
+          <div class="space-y-10">
+            <!-- right div 1 -->
+            <div class="flex items-center gap-5 justify-end">
+              
+              <div class="text-end">
+                <h1>Integrated Supplier</h1>
+                <div class="flex justify-end"><p class="border-b border-gray-500 w-16"></p></div>
+                <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+              <div>
+                <i class="fa-brands fa-pagelines"></i>
+              </div>
+            </div>
+            <!-- right div 2 -->
+            <div class="flex  items-center gap-5 justify-end">
+              
+              <div class="text-end">
+                <h1>Sustainable Practice</h1>
+                <div class="flex justify-end"><p class="border-b border-gray-500 w-16"></p></div>
+                <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-ice-cream"></i>
+              </div>
+            </div>
+            <!-- right div 3 -->
+            <div class="flex  items-center gap-5 justify-end">
+              
+              <div class="text-end">
+                <h1>The Benefits Only</h1>
+                <div class="flex justify-end"><p class="border-b border-gray-500 w-16"></p></div>
+                <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+              </div>
+              <div>
+                <i class="fa-regular fa-thumbs-up"></i>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
-    <footer>
 
+    <footer class="footer footer-center p-10 bg-black-primary text-white">
+  
+      <div class="flex gap-3">
+        <img src="./images/logo.png" alt="">
+        <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Fruit Burst</a>
+      </div>
+      
+      <div class="flex flex-wrap md:flex-nowrap lg:flex-nowrap gap-6">
+        <p>Home</p>
+        <p>About Us</p>
+        <p>Shop</p>
+        <p>All Fruits</p>
+        <p>Support</p>
+        <p>My Account</p>
+      </div>
+
+      <div class="flex flex-wrap md:flex-nowrap lg:flex-nowrap gap-6 text-3xl">
+        <div><i class="fa-brands fa-square-twitter"></i></div>
+        <div><i class="fa-brands fa-facebook"></i></div>
+        <div><i class="fa-brands fa-youtube"></i></div>
+        <div><i class="fa-brands fa-linkedin"></i></div>
+        <div><i class="fa-brands fa-instagram"></i></div>
+        <div><i class="fa-brands fa-apple"></i></div>
+      </div>
+      
     </footer>
 </body>
 </html>
